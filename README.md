@@ -1,9 +1,9 @@
-# Compile Monero 0.9 on Ubuntu 15.10 and 14.04 x64
+# Compile Monero 0.9 on Ubuntu 16.04 x64 beta
 The example shows how to
-compile the current github version of [Monero](https://getmonero.org/), as of 03 Jan 2015,
-on Ubuntu 15.10 and 14.04.3 x64.
+compile the current github version of [Monero](https://getmonero.org/), as of 25 Feb 2015,
+on Ubuntu 16.04 x64 beta.
 
-## Dependencies (Ubuntu 15.10)
+## Dependencies
 Before proceeding to the compilation, the following packages are required:
 
  ```bash
@@ -17,20 +17,6 @@ sudo apt-get install git
 sudo apt-get install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen
  ```
 
-## Dependencies (Ubuntu 14.04)
-
-Before proceeding to the compilation, the following packages are required:
-
- ```bash
-# update Ubuntu's repository
-sudo apt-get update
-
-#install git to easly get Monero from github
-sudo apt-get install git
-
-# install dependencies to be able to compile Monero
-sudo apt-get install build-essential cmake libboost1.55-all-dev miniupnpc libunbound-dev graphviz doxygen
- ```
 
 ## Compilation
 Having the dependencies, we can download the current github Monero version and compile it as follows:
