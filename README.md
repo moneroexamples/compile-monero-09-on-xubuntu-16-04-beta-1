@@ -111,6 +111,11 @@ With this, we can just start the daemon and wallet simply using
 `moneronode` and `monerowallet` commands. `rlwrap` will provide
 tab-complition and history for the monero programs.
 
+## Example screenshot
+
+![Ubuntu Screeshot](https://raw.githubusercontent.com/moneroexamples/compile-monero-09-on-ubuntu-16-04/master/imgs/ubuntu_screen.jpg)
+
+
 ## Monero C++11 development (optional)
 If you want to develop your own C++11 programs on top of Monero 0.9,
 Monero's static libraries and headers will be needed. Below is shown
