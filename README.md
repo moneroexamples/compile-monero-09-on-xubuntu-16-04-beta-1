@@ -1,22 +1,22 @@
 # Compile Monero 0.9 on Ubuntu 16.04 x64 beta
-The example shows how to
-compile the current github version of [Monero](https://getmonero.org/), as of 25 Feb 2015,
-on Ubuntu 16.04 x64 beta.
+The example shows how to compile the current github version of [Monero](https://getmonero.org/), as of 27 Feb 2015, on Ubuntu 16.04 x64 beta.
 
 ## Dependencies
-Before proceeding to the compilation, the following packages are required:
+Before proceeding with the compilation, the following packages are required:
 
- ```bash
+```bash
 # update Ubuntu's repository
 sudo apt-get update
 
-#install git to easly get Monero from github
+#install git to download latest Monero source code from github
 sudo apt-get install git
 
 # install dependencies to be able to compile Monero
 sudo apt-get install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen
- ```
 
+# or git and all dependencies in one command
+# sudo apt-get install git build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen
+```
 
 ## Compilation
 Having the dependencies, we can download the current github Monero version and compile it as follows:
@@ -33,25 +33,19 @@ make # or make -j number_of_threads, e.g., make -j 2
 ```
 
 ## Installation
-After successful compilation, the Monero binaries should be located in `./build/release/bin` as shown
-below:
+After successful compilation, the Monero binaries should be located in `./build/release/bin` as shown below:
 
 ```bash
-./bitmonero
-├── build
-│   └── release
-│       ├── bin
-│       │   ├── bitmonerod
-│       │   ├── blockchain_converter
-│       │   ├── blockchain_dump
-│       │   ├── blockchain_export
-│       │   ├── blockchain_import
-│       │   ├── cn_deserialize
-│       │   ├── connectivity_tool
-│       │   ├── simpleminer
-│       │   └── simplewallet
-
-# other subfolders than bin not shown here.
+./build/release/bin/
+├── bitmonerod
+├── blockchain_converter
+├── blockchain_dump
+├── blockchain_export
+├── blockchain_import
+├── cn_deserialize
+├── connectivity_tool
+├── simpleminer
+└── simplewallet
 ```
 
 I usually move the binaries into `/opt/bitmonero/` folder. This can be done as follows:
@@ -76,7 +70,7 @@ This should result in:
 └── simplewallet
 ```
 
-Now we can start the Monero daemon, i.e. `bitmonerod`, and let it
+Now we can start the Monero daemon, i.e., `bitmonerod`, and let it
 download the blockchain and synchronize itself with the Monero network. After that, you can run your the `simplewallet`.
 
 ```bash
@@ -126,7 +120,7 @@ on Monero. An example of such a program is  [access-blockchain-in-cpp](https://g
 ### Monero static libraries
 
 When the compilation finishes, a number of static Monero libraries
-should be generated. We will need them to link against.
+should be generated. We will need them to link against in our C++11 programs.
 
 Since they are spread out over different subfolders of the `./build/` folder, it is easier to just copy them into one folder. I assume that
  `/opt/bitmonero-dev/libs` is the folder where they are going to be copied to.
@@ -347,7 +341,6 @@ This should results in the following file structure:
 ```
 
 Full `/opt/bitmonero-dev/` tree is [here](https://github.com/moneroexamples/compile-monero-09-ubuntu-1510/blob/master/res/full_tree_bitmonero-dev.txt).
-
 
 
 ## Other examples
