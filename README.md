@@ -109,7 +109,7 @@ tab-complition and history for the monero programs.
 
 ## Example screenshot
 
-![Ubuntu Screeshot](https://raw.githubusercontent.com/moneroexamples/compile-monero-09-on-ubuntu-16-04/master/imgs/ubuntu_screen.jpg)
+![Ubuntu Screeshot](https://raw.githubusercontent.com/moneroexamples/compile-monero-09-on-xubuntu-16-04-beta-1/master/imgs/ubuntu_screen.jpg)
 
 
 ## Monero C++11 development (optional)
@@ -342,7 +342,7 @@ This should results in the following file structure:
     └── wallet_rpc_server.h
 ```
 
-Full `/opt/bitmonero-dev/` tree is [here](https://github.com/moneroexamples/compile-monero-09-ubuntu-1510/blob/master/res/full_tree_bitmonero-dev.txt).
+Full `/opt/bitmonero-dev/` tree is [here](https://github.com/moneroexamples/compile-monero-09-on-xubuntu-16-04-beta-1/blob/master/res/full_tree_bitmonero-dev.txt).
 
 
 ## Other examples
