@@ -1,11 +1,13 @@
-# Compile Monero 0.9 on Ubuntu 16.04 x64 beta
-The example shows how to compile the current github version of [Monero](https://getmonero.org/), as of 27 Feb 2015, on Ubuntu 16.04 x64 beta.
+# Compile Monero 0.9 on Xubuntu 16.04 x64 Beta 1
+The example shows how to compile the current github version of [Monero](https://getmonero.org/), as of 27 Feb 2015, on [Xubuntu 16.04 x64 Beta 1](http://www.omgubuntu.co.uk/2016/02/ubuntu-16-04-beta-1-download-flavors).
+
+Note: Beta of Ubuntu 16.04 is not yet available. It will be released at the end of March.
 
 ## Dependencies
 Before proceeding with the compilation, the following packages are required:
 
 ```bash
-# update Ubuntu's repository
+# update Xubuntu's repository
 sudo apt-get update
 
 #install git to download latest Monero source code from github
