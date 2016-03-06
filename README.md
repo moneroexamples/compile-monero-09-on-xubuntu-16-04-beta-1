@@ -40,7 +40,7 @@ make # or make -j number_of_threads, e.g., make -j 2
 
 Please not that this is a current version of Monero on github, **not the offical and stable
 release**. Thus, as the development of Monero continues virtually on daily basis, sometimes
-things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero can be downloaded from [here](https://github.com/monero-project/bitmonero/releases/latest). 
+things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero which can be found [here](https://github.com/monero-project/bitmonero/releases/latest). 
 
 ## Installation
 After successful compilation, the Monero binaries should be located in `./build/release/bin` as shown below:
