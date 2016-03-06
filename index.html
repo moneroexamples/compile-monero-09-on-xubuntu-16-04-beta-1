@@ -22,7 +22,7 @@
       <h1>
 <a id="compile-monero-09-on-xubuntu-1604-x64-beta-1" class="anchor" href="#compile-monero-09-on-xubuntu-1604-x64-beta-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compile Monero 0.9 on Xubuntu 16.04 x64 Beta 1</h1>
 
-<p>The example shows how to compile the current github version of <a href="https://getmonero.org/">Monero</a>, as of 27 Feb 2015, on <a href="http://www.omgubuntu.co.uk/2016/02/ubuntu-16-04-beta-1-download-flavors">Xubuntu 16.04 x64 Beta 1</a>.</p>
+<p>The example shows how to compile the current github version of <a href="https://getmonero.org/">Monero</a>, as of 06 Mar 2015, on <a href="http://www.omgubuntu.co.uk/2016/02/ubuntu-16-04-beta-1-download-flavors">Xubuntu 16.04 x64 Beta 1</a>.</p>
 
 <p>Note: Beta of Ubuntu 16.04 is not yet available. It will be released at the end of March.</p>
 
@@ -55,7 +55,15 @@ git clone https://github.com/monero-project/bitmonero.git
 <span class="pl-c1">cd</span> bitmonero/
 
 <span class="pl-c"># compile</span>
-make <span class="pl-c"># or make -j number_of_threads, e.g., make -j 2</span></pre></div>
+make <span class="pl-c"># or make -j number_of_threads, e.g., make -j 2</span>
+
+<span class="pl-c"># alternatively `make release` can be used instead of `make`. This compiles</span>
+<span class="pl-c"># the source code without compiling unique tests which is faster, and can</span>
+<span class="pl-c"># avid problems if there are compilation errors with compiling the tests</span></pre></div>
+
+<p>Please not that this is a current version of Monero on github, <strong>not the offical and stable
+release</strong>. Thus, as the development of Monero continues virtually on daily basis, sometimes
+things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero can be downloaded from <a href="https://github.com/monero-project/bitmonero/releases/latest">here</a>. </p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
