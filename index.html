@@ -63,7 +63,7 @@ make <span class="pl-c"># or make -j number_of_threads, e.g., make -j 2</span>
 
 <p>Please not that this is a current version of Monero on github, <strong>not the offical and stable
 release</strong>. Thus, as the development of Monero continues virtually on daily basis, sometimes
-things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero which can be found <a href="https://github.com/monero-project/bitmonero/releases/latest">here</a>. </p>
+things can break, including the compilation procedure provided. To avoid this, please use the source code and binary files of the offical and stable release of Monero which can be found <a href="https://github.com/monero-project/bitmonero/releases/latest">here</a>.</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
@@ -119,8 +119,8 @@ This problem can be overcome using <a href="https://github.com/hanslub42/rlwrap"
 sudo apt-get install rlwrap
 
 <span class="pl-c"># download bitmonerod and simplewallet commands files</span>
-wget -O <span class="pl-k">~</span>/.bitmonero/monerocommands_bitmonerod.txt https://raw.githubusercontent.com/moneroexamples/compile-monero-ubuntu/master/monerocommands_bitmonerod.txt
-wget -O <span class="pl-k">~</span>/.bitmonero/monerocommands_simplewallet.txt https://raw.githubusercontent.com/moneroexamples/compile-monero-ubuntu/master/monerocommands_simplewallet.txt
+wget -O <span class="pl-k">~</span>/.bitmonero/monerocommands_bitmonerod.txt https://raw.githubusercontent.com/moneroexamples/compile-monero-09-on-xubuntu-16-04-beta-1/master/monerocommands_bitmonerod.txt
+wget -O <span class="pl-k">~</span>/.bitmonero/monerocommands_simplewallet.txt https://raw.githubusercontent.com/moneroexamples/compile-monero-09-on-xubuntu-16-04-beta-1/master/monerocommands_simplewallet.txt
 
 <span class="pl-c"># add aliases to .bashrc</span>
 <span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>alias moneronode='rlwrap -f ~/.bitmonero/monerocommands_simplewallet.txt /opt/bitmonero/bitmonerod'<span class="pl-pds">"</span></span> <span class="pl-k">&gt;&gt;</span> <span class="pl-k">~</span>/.bashrc
